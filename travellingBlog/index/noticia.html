@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR" ng-app="blogMax">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+
+  <title>Ler mais</title>
+</head>
+
+
+<nav id = "navbar">   
+  <div id = "container">
+    <a id = "navbar-brand"> <strong>TRAVELING</strong> </a>
+    <div id = "navbar-nav">
+      <a href = "">HOME</a>
+      <a href = "">VIAGENS</a>
+      <a href = "">EXPERIÊNCIAS</a>
+      <a href = "">SOBRE</a>
+    </div>
+  </div>
+</nav>
+
+
+<body>
+<main class="container">
+  <div ng-controller="RestMax">
+    <div>
+      <h1 id="titulo">{{ publicacoes.title }}</h1>
+      <p id="subTitulo">{{ publicacoes.description }}</p>
+    </div>
+    
+    <div>
+      <p id="autor">By: Eduarda Müller</p>
+      <p id="data">{{ publicacoes.postDate }}</p> 
+    </div>
+
+    <div id="figure" class="img-fluid">
+      <img id="imgNoticia" ng-src="https://api-fake-blog.herokuapp.com{{ publicacoes.thumbImage }}" alt="">
+    </div>
+
+    
+  <div>
+    <p id="noticia">{{ publicacoes.description }}</p>
+    <p id="noticia">{{ publicacoes.description }}</p>
+  </div>
+          
+      
+  </div>
+</main>
+
+
+</body>
+<br><br>
+
+<footer>
+  <div class = "social-links">
+    <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+    <a href = "#"><i class = "fab fa-twitter"></i></a>
+    <a href = "#"><i class = "fab fa-instagram"></i></a>
+    <a href = "#"><i class = "fab fa-pinterest"></i></a>
+  </div>
+  <span>Traveling Blog Page</span>
+</footer>
+
+
+</html>
+
+
